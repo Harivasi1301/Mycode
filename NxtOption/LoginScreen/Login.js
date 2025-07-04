@@ -1,6 +1,7 @@
 const { expect } = require('@playwright/test');
 
-class NxtLogin {
+class NxtLogin 
+{
   constructor(page) 
   {
     this.page = page;

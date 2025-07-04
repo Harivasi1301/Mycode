@@ -4,9 +4,7 @@ const { expect } = require('@playwright/test');
 
 class Ui_Loginpage
 {
- /**
-   * @param {import('playwright').Page} page
-   */
+  
   constructor(page) 
  {
     this.page = page;
@@ -51,7 +49,7 @@ async BrokerList()
 
     if(visi)
     {
-      console.log("The Broker list is visble")
+      console.log("The Broker list is visible")
       await this.page.getByRole('button', { name: '5Paisa' }).isVisible();
       await this.page.getByRole('button', { name: 'IIFL' }).isVisible();
       await this.page.getByRole('button', { name: 'Flattrade' }).isVisible();
